@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
                 .setTimestamp()
                 .setDescription(`These are the avaliable commands:`)
                 .addField(`Commands:`, "``add_previous_winners``\n ``bid``\n ``biderror``\n ``endbid``\n ``get_raffle``\n ``help``\n ``listbidders``\n ``ping``\n ``previous_winners``\n ``startbid``\n ``rules``")
-                .addField("To get more information about a command, use: ", "`/help [command_name]`")
+                .addField("To get more information about a command, use: ", "`?help [command_name]`")
             message.channel.send({embed: uEmbed});
     }
 }
