@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
             if (str == "") return message.channel.send("Sorry I found nothing!");
             let uEmbed = new Discord.RichEmbed()
                 .setColor(colors.red)
-                .setTitle("Win the raffle last time")
+                .setTitle("Won the raffle last time")
                 .setThumbnail(bot.user.displayAvatarURL)
                 .setTimestamp()
                 .addField(`\u200b`, str)
