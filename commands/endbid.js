@@ -29,6 +29,7 @@ module.exports.run = async (bot, message, args) => {
                 if (err) throw err
                 return message.channel.send("Bidding Ended! <@&"+ botconfig.bidderid + ">");
             })
+            return;
         })
     }
 }
