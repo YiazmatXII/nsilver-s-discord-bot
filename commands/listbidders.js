@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
                 .setDescription(`These are the currents winners:`)
                 .addField(`Currents winners:`, str)
             message.channel.send({embed: uEmbed});
-            if (i == nb) {
+            if (i > nb) {
                 str = ""
                 while (true) {
                 if (result[j] == undefined) {
@@ -57,7 +57,6 @@ module.exports.run = async (bot, message, args) => {
                 str = str + "``" + result[j]["actual"] + " " + user.username + "``\n"
                 i++;
                 j++;
-            }
                 let sEmbed = new Discord.RichEmbed()
                     .setColor(colors.red)
                     .setTitle("Not winning")
@@ -66,6 +65,7 @@ module.exports.run = async (bot, message, args) => {
                     .setDescription(`These are not winning a slot:`)
                     .addField(`Outside the winning poll:`, str)
                 message.channel.send({embed: sEmbed});
+                }
             }
             return;
         })
