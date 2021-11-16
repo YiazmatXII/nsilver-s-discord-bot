@@ -46,7 +46,7 @@ module.exports.run = async (bot, message, args) => {
 
 }
 
-function getRank(data, id) {d
+function getRank(data, id) {
     let rank = 0;
     for (key in data) {
         if (data.hasOwnProperty(key)) {
