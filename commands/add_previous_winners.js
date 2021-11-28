@@ -38,7 +38,7 @@ function check_number_args(args) {
 }
 
 module.exports.config = {
-    name: "add_previous_winner",
+    name: "add_previous_winners",
     description: "Erase the previous raffle winners list and create a new one with arguments.",
     usage: "?add_previous_winner [id1] <id2> ...",
     accessableby: "Admin",
