@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.config = {
-    name: "previous_winner",
+    name: "previous_winners",
     description: "Give a list of last raffle winners",
     usage: "?previous_winner [number]",
     accessableby: "Admin",
