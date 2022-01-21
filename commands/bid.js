@@ -15,6 +15,7 @@ module.exports.run = async (bot, message, args) => {
             number = Number(args[0].split('.')[0] + "." + args[0].split('.')[1][0])
         } else {
             number = Number(args[0])
+            if (number < 1) return message.channel.send("The bid must be equal or greater than one!");
         }
         let id = message.member.user.id
 
